@@ -1,16 +1,7 @@
-git remote add origin https://github.com/Aboakye2074/simple-docker.git
-git branch -M main
-git push -u origin main
-
-
-…or import code from another repository
-You can initialize this repository with code from a Subversion, Mercurial, or TFS project.
-
-
 pipeline {
  environment {
  imagename = “aboakye2074/jenkins-docker”
- registryCredential = ‘aboakye-docckerhub’
+ registryCredential = ‘aboakye2074-docckerhub’
  dockerImage = ‘’
  }
  agent any
